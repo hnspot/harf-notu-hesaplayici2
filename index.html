@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harf Notu Hesaplayıcı</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Harf Notu Hesaplayıcı</h1>
+    
+    
+    <p class="subtitle">Bu araç, sınav notlarınızı 
+    yeni harf notu sistemine dayanarak harf notuna çevirir.
+
+    <br> <br> Program size harf notunuz hakkında eriştiğiniz
+    standart sapmanın ve not ortalamasının değerlendirme 
+    yapılırken kullanılan standart sapmayla ve not ortalamasıyla 
+    aynı olmamasından ötürü size ancak bir FİKİR VERİR.
+    <br> <br>İstenilen verilerle oynayarak alternatif senaryolarda 
+    harf notunuzun ne olduğunu görebilirsiniz. 
+    </p>
+
+  
+    <div class="group" id="examGroup">
+      <label for="examCount">Sınav Sayısı:</label>
+      <input type="number" id="examCount" min="1" max="4">
+    </div>
+
+
+    <div id="examDetails"></div>
+
+    
+    <button onclick="calculateCommonSapma()">Hesapla</button>
+    <p>Puanınız: <span id="result"></span></p>
+    <p>Sınıfınızın Not Ortalaması: <span id="totalOrt"></span></p>
+    <p id="harfNotuDisplay"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
