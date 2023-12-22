@@ -188,7 +188,7 @@ else if(totalOrtWeighted < 42.5){
   else harfNotu = "FF";
 }
  else{
-     harfNotu="onusöyleyemiyoruzmaalesef";
+     harfNotu="Sistem harf notunuzu hesaplayamadı.";
  }
 document.getElementById("harfNotuDisplay").textContent = "Harf Notun: " + harfNotu;
 }
